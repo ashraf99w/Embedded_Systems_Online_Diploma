@@ -29,6 +29,8 @@ int main(void) {
 	 */
 	//-------------------------------------------
 
+
+
 	//code2 example for an implicit casting
 	//------------------------------------
 	/*
@@ -41,8 +43,9 @@ int main(void) {
 	z= x+ 1.0;
 	printf("x=%d	z=%f", x,z);
 	 */
-
 	//--------------------------------------
+
+
 	// code 3  program to demonstrate explicit type casting
 	//---------------------------------------------------------
 
@@ -53,6 +56,8 @@ int main(void) {
 	printf("sum = %d",sum);
 	 */
 	//-----------------------------------------------------------
+
+
 	//code 4 for printf and scanf
 	//-----------------------------------------------------------
 	/*
@@ -63,6 +68,9 @@ int main(void) {
     printf("number =%d",x);
 	 */
 	//-----------------------------------------------------------
+
+
+
 	//code 5 for printf and scanf with float
 	//-----------------------------------------------------------
 	/*
@@ -74,9 +82,11 @@ int main(void) {
 	 */
 	//-----------------------------------------------------------
 
+
+
 	//code 6 for calculating circle area or circumference
-		//-----------------------------------------------------------
-   /*
+	//-----------------------------------------------------------
+	/*
 	float area,circumference,radius;
 	char calc_type;
 	printf("Enter the radius :");
@@ -100,8 +110,11 @@ int main(void) {
 	{
 		printf("wrong entry");
 	}
-   */
-		//-----------------------------------------------------------
+	 */
+	//---------------------------------------------------
+
+
+
 	//code 7 to find the largest value of 3 numbers
 	//-----------------------------------------------------------
 	/*
@@ -128,14 +141,14 @@ int main(void) {
 
 
 
-*/
+	 */
 
 	//-----------------------------------------------------------
 
 
 	//code 8 for bitwise operators
-		//-----------------------------------------------------------
-			/*
+	//-------------------------------------------------------
+	/*
 	        unsigned char Register=0b10000010;
 			Register|=(1<<4)|(1<<5);
 			printf("%d \n",Register);
@@ -143,35 +156,39 @@ int main(void) {
 			printf("%d \n",Register);
 			Register^= (1<<2)|(1<<3);
 			printf("%d \n",Register);
-			*/
+	 */
 	//-----------------------------------------------------------
 
 
 	//code 9 for calculating minimum using inline condition
-		//-----------------------------------------------------------
-			/*
+	//-----------------------------------------------------------
+	/*
             int a,b,minimum;
 		    printf("Enter two numbers :");
 		    fflush(stdin); fflush(stdout);
 		    scanf("%d %d",&a,&b);
 		    minimum=(b<a)?b:a;
 		    printf("minimum is %d",minimum);
-		    */
+	 */
 	//-----------------------------------------------------------
 
+
+
 	//code 10 for calculating minimum using inline condition
-			//---------------------------------------------------
-                /*
+	//---------------------------------------------------
+	/*
 	            int a,b;
 			    printf("Enter two numbers :");
 			    fflush(stdin); fflush(stdout);
 			    scanf("%d %d",&a,&b);
 			    printf("minimum is %d",(b<a)?b:a);
-                 */
-		//--------------------------------------------------------
+	 */
+	//--------------------------------------------------------
+
+
 
 	//code 11 for calculating area and circumference of circle using switch
-			//-----------------------------------------------------------
+	//-----------------------------------------------------------
 	/*
 	char choice;
 	float radius,circumference, area;
@@ -204,38 +221,41 @@ int main(void) {
 	{	printf("wrong choice \n ");}
 	}
 
-		*/
-		//-----------------------------------------------------------
-//	code no.12 for loop one line body ex. for loop
+	 */
+	//----------------------------------------------------
+
+
+	//	code no.12 for loop one line body ex. for loop
 	//-------------------------------------------------------
-/*
+	/*
 	int i;
 	for (i=0; i<10; i++)
 		printf(" %d hello \n",i);
-	*/
+	 */
 	//-------------------------------------------------------
 
 
+
 	//	code no.13 for loop (summation from 1 to 99) ex. for loop
-		//-------------------------------------------------------
-/*
+	//-------------------------------------------------------
+	/*
 		int i,sum=0;
 		for (i=1; i<=99;i++)
 		{
-		                       //--> 1=0+1
-		                       //--> 3=1+2
-		                       //--> 6=3+3
-		                      // --> 10=6+4
+		                       //--> sum=0+1
+		                       //--> sum=1+2
+		                       //--> sum=3+3
+		                      // --> sum=6+4
 
 			sum=sum+i;
 		}
 		printf("%d",sum);
-*/
-		//-------------------------------------------------------
+	 */
+	//-------------------------------------------------------
 
 	//	code no.14 for loop (average of students degree's)
 	//ex. for loop
-			//-------------------------------------------------------
+	//-------------------------------------------------------
 
 	/*
 	int i,students_number;
@@ -254,14 +274,14 @@ int main(void) {
     }
     printf("average is %f",sum/students_number);
 
-		*/
-			//-------------------------------------------------------
+	 */
+	//-------------------------------------------------------
 
 
 
-//	code no.15 for calculating the sum off odd values (between 1 to 99)
-//ex.on while
-			//-------------------------------------------------------
+	//	code no.15 for calculating the sum off odd values (between 1 to 99)
+	//ex.on while
+	//-------------------------------------------------------
 	/*
 	int number=1,sum=0;
 
@@ -272,16 +292,18 @@ int main(void) {
 	          }
 	          printf("the sum off odd values (between 1 to 99) = %d",sum);
 			//-------------------------------------------------------
-    */
+	 */
 
-//	code no.16 for calculating average students degrees ex.(break statement)
-//-------------------------------------------------------
+	//	code no.16 for calculating average students degrees ex.(break statement)
+	//-------------------------------------------------------
 
-/*
+	/*
 float sum=0,degree;
-int student_number=0;//you should to start with 0
-					 //to get out from the iteration
-					 //with the right number students the user entered
+int student_number=0;
+
+//you should to start with 0
+//to get out from the iteration
+//with the right number of students the user entered
 
 printf("enter -ve degree to stop \r\n");
 while(1)
@@ -299,12 +321,12 @@ while(1)
 printf("the average of the students degree's is %f",sum/student_number);
 
 
-*/
-//-------------------------------------------------------
+	 */
+	//-------------------------------------------------------
 
 
 
-//	code no.17 for calculating polynomial value exam on (do while)
+	//	code no.17 for calculating polynomial value exam on (do while)
 	//-------------------------------------------------------
 	/*
 	float x,y;
@@ -318,13 +340,13 @@ printf("the average of the students degree's is %f",sum/student_number);
 	printf(" \n if you want to evaluate again press 'y'\n ");
 	}
 	while(getche()=='y');
-	*/
-//-------------------------------------------------------
+	 */
+	//-------------------------------------------------------
 
 
 	//	code no.18 for calculating polynomial value ex. on goto statement
-		//-------------------------------------------------------
-   /*
+	//-------------------------------------------------------
+	/*
 		float x,y;
 
 		evaluate_again:
@@ -337,28 +359,28 @@ printf("the average of the students degree's is %f",sum/student_number);
 
 		if(getche()=='y')
 			goto evaluate_again;
-*/
+	 */
 	//-------------------------------------------------------
 
 
 	//	code no.19  ex. on break statement
-		//-------------------------------------------------------
-     /*
+	//-------------------------------------------------------
+	/*
 	int i;
 	for (i=0;i<10;i++)
 	{
 		if (i==5)
 			break;
-		printf("%d \t",i);
+		printf("%d \t",i);// 0	1	2	3	4
 	}
-	*/
+	 */
 	//-------------------------------------------------------
 
 
 
 	//	code no.20  ex. continue statement
-		//-------------------------------------------------------
-  /*
+	//-------------------------------------------------------
+	/*
 	int i;
 	for (i=0;i<10;i++)
 	{
@@ -368,15 +390,23 @@ printf("the average of the students degree's is %f",sum/student_number);
 			continue;
 		}
 		printf("%d",i);
+
+//		01234
+//		skip printing 5 using continue statement
+//		6
+//		skip printing 7 using continue statement
+//		89
+
+
 	}
-	*/
+	 */
 	//-------------------------------------------------------
 
 
 
 	//	code no.21  ex. nested loop
-		//-------------------------------------------------------
-/*
+	//-------------------------------------------------------
+	/*
 	int i =0,j;
 	for(i=0;i<3;i++)
 	{
@@ -385,15 +415,19 @@ printf("the average of the students degree's is %f",sum/student_number);
 			printf("%d \t",j+1);
 		}
 		printf("\n");
-	}
 
-*/
+//		1	2	3
+//		1	2	3
+//		1	2   3
+	}
+	 */
+
 	//-------------------------------------------------------
 
 
 	//	code no.22  ex. nested loop assignment
-		//-------------------------------------------------------
-     /*
+	//-------------------------------------------------------
+	/*
 	  int i,j;
       for(i=0;i<10;i++)
       {
@@ -403,9 +437,25 @@ printf("the average of the students degree's is %f",sum/student_number);
     	  }
     	  printf("\n");
       }
-	//-------------------------------------------------------
-*/
 
+//
+//      01234556789
+//      123456789
+//      23456789
+//      3456789
+//      456789
+//      56789
+//      6789
+//      789
+//      89
+//      9
+
+
+	//-------------------------------------------------------
+
+
+
+	 */
 
 
 	return 0;
