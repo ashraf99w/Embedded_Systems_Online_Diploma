@@ -14,7 +14,7 @@
 int main(void) {
 
 	//example on break statement
-	/*
+/*
 	int i,n;
 	float average,num,sum=0;
 	printf("Enter the maximum no. of inputs:");
@@ -33,20 +33,22 @@ int main(void) {
 		sum=sum+num;
 	}
 
+   //else condition only works >>> if else is redundant
 	if(i==(n+1))
 		average=sum/n;
 	else
 		average=sum/(i-1);
 
 	printf("the average of the numbers is %f",average);
-*/
 
+
+*/
 
 /*
  write a c program to find the product of 4 integers entered by the user
 if the user enters 0 skip it.
 */
-	/*
+/*
 	int i,num,product=1;
 	printf("enter 4 integers");
 	for(i=1;i<=4;i++)
@@ -56,6 +58,7 @@ if the user enters 0 skip it.
 		fflush(stdout);
 		scanf("%d",&num);
 		if(num==0)
+
 			continue;
 		product *=num;
 	}
@@ -63,7 +66,7 @@ if the user enters 0 skip it.
 */
 
 //example on multidimensional arrays in C
-	/*
+/*
 	float a[2][2],b[2][2],c[2][2];
 	int i,j;
 	printf("Enter the elements of the 1st matrix");
@@ -118,19 +121,20 @@ if the user enters 0 skip it.
        	}
        }
 
-    printf("\nthe sum of matrix");
+    printf("\nthe sum of matrix \n");
     for(i=0;i<2;i++)
           {
           	for(j=0;j<2;j++)
           	{
-          	   printf("\nc[%d][%d] = %f",i+1,j+1,c[i][j]);
+          	   printf("c[%d][%d] = %f \t",i+1,j+1,c[i][j]);
           	}
+          	printf("\n");
           }
+
 */
 
-
 	//C program for calculating the average using arrays
-	/*
+/*
 	int i,n;
 	float sum=0,num;
 	printf("enter the number of data: ");
@@ -144,7 +148,7 @@ if the user enters 0 skip it.
 		fflush(stdin);
 		fflush(stdout);
 		scanf("%f",&num);
-		a[i]=num;
+		a[i]=num;// instead of this line we can do this >>sum+=a[i]; this line makes for loop redundant
 
 	}
 
@@ -154,6 +158,7 @@ if the user enters 0 skip it.
 	}
 	printf("the average is %f",sum/n);
 	printf("\n %d",sizeof(a));
+
 */
 
 
@@ -211,10 +216,11 @@ if the user enters 0 skip it.
 	// C program to insert an element in an array
 /*
 	int i ,s,inserted_element,location;
+    int array[30];
 	printf("enter the no. of elements :");
 	fflush(stdin);fflush(stdout);
 	scanf("%i",&s);
-	int array[s];
+
 	printf("\n");
 	for(i=0; i<s; i++)
 	{
@@ -229,8 +235,12 @@ if the user enters 0 skip it.
 	printf("\nenter the location : ");
 	fflush(stdin);fflush(stdout);
 	scanf("%i",&location);
-	array[location-1]=inserted_element;
-
+	for (i=s;i>=location;--i)
+	{
+		array[i]=array[i-1];
+	}
+     array[location-1]=inserted_element;
+     s++;
 	printf("\n");
 	for(i=0; i<s; i++)
 		{
@@ -238,6 +248,7 @@ if the user enters 0 skip it.
 		}
 
 */
+
 	// c program to search an element in an array
 /*
 	    int i ,s,searched_element,location;
@@ -272,6 +283,7 @@ if the user enters 0 skip it.
 		{
 			printf("the element found in location %i",location+1);
 		}
+
 */
 
 	//C Program to find the frequency of characters in string
@@ -281,7 +293,7 @@ if the user enters 0 skip it.
 	printf("enter a string: ");
 	fflush(stdin);fflush(stdout);
 	gets(text);
-	printf("\nenter character to find frequency: ");
+	printf("\nenter character to find it's frequency: ");
 	fflush(stdin);fflush(stdout);
 	scanf("%c",&x);
 	for(i=0;text[i]!='\0';i++)
@@ -328,8 +340,6 @@ if the user enters 0 skip it.
 	printf("th reverse is: %s",text_rev);
 
 */
-
-
 
 
 	return 0;
