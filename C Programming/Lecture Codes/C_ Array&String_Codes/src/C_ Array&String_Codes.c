@@ -14,7 +14,7 @@
 int main(void) {
 
 	//debug this code
-    /*
+	/*
 	int radius=5;
 	float area;
 	area=3.14*radius*radius;
@@ -26,7 +26,7 @@ int main(void) {
 	a=x;
 	b=y;
 	b=z;
-	*/
+*/
 
 	//code no. 2
 	/*
@@ -49,17 +49,19 @@ int main(void) {
 	*/
 
 
+
 	//Lab:Calculate Polynomial
 	//Value for a Set of Inputs
-    /*
+/*
 	float x[]={5,16,22,3.5,15};
 	float y;
-	for(int i =0; i<5 ;i++)
+	int i;
+	for(i =0; i<5 ;i++)
 	{
 		y= 5*x[i]*x[i] + 3*x[i] +2;
 		printf("\n the value of y(%f)=%f ",x[i],y);
 	}
-    */
+*/
 
 
 
@@ -83,8 +85,8 @@ int main(void) {
 	fflush(stdin);fflush(stdout);
 	scanf("%d",&degrees[1][4]);
 	printf("%d",degrees[1][4]);
-*/
 
+*/
 
 //Calculate and Print the Transpose of 3x3 Matrix
 /*
@@ -92,7 +94,7 @@ int main(void) {
 	int r,c;
 	float t[3][3];
 
-	//entering the values of the 2d array
+	//entering the values of the 2dimension array
 	for(r = 0; r < 3; r++ )
 	{
 		for(c = 0; c < 3; c++ )
@@ -100,12 +102,12 @@ int main(void) {
 			printf("\nEnter the item(%d,%d):  ",r,c);
 			fflush(stdin);fflush(stdout);
 			scanf("%f",&a[r][c]);
-			printf("\n");
+
 		}
 	}
 
-	//printing the values of 2d array
-	printf("the matrix is\n");
+	//printing the values of 2dimension array
+	printf("\nthe matrix is\n");
 	for(r = 0; r < 3; r++ )
 	{
 		for(c = 0; c < 3; c++ )
@@ -141,8 +143,8 @@ int main(void) {
 		}
 		printf("\n");
 	}
-*/
 
+*/
 
 //code to illustrate the string in c
 /*
@@ -158,6 +160,7 @@ int main(void) {
 	printf("%s \n",&x[1]);
 	printf("%s \n",&x[3]);
 */
+
 /*
 // code behaves as prints("%s",);
 	char x[6];
@@ -170,11 +173,13 @@ int main(void) {
 	x[5]= 0;
 	printf("%s \n",x);
 
-	for (i=0; (i<sizeof(x) && x[i] !=0); i++)
+	for (i=0; (i<sizeof(x) && x[i] !=0 ); i++)//only one of the two conditions works
 	{
 		printf("%c",x[i]);
 	}
+
 */
+
 
 //code array of strings
 /*
@@ -189,7 +194,7 @@ int main(void) {
 */
 
 //Copy String to String
-	/*
+/*
 	char a [20]="ashraf mohamed";
     char b [20];
     int i=0;
@@ -201,6 +206,7 @@ int main(void) {
 	 b[i]=0;
 	 printf("%s",b);
 */
+
 
 //Copy String to String using strcpy
 /*
@@ -223,11 +229,10 @@ int main(void) {
 
 
 //Finding the String Length
-	/*
+/*
 	char a[]="ashraf mohamed ";
 	printf("%d",strlen(a));
-	*/
-
+*/
 
 // string compare
 /*
@@ -248,7 +253,8 @@ int main(void) {
     }
 	if(i==5)
 		printf("sorry,your name is not listed \n");
-	*/
+
+*/
 
 
 	return 0;
