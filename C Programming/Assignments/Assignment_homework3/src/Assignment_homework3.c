@@ -136,28 +136,33 @@ if the user enters 0 skip it.
 	//C program for calculating the average using arrays
 /*
 	int i,n;
-	float sum=0,num;
+	float sum=0.0;
+	float a[100];
 	printf("enter the number of data: ");
 	fflush(stdin);
 	fflush(stdout);
 	scanf("%d",&n);
-    float a[n];
+	while(n>=100 || n<=0)
+	{
+	 printf("the no. off elments should be in this range(1>>100) enter no.of elements:");
+	 fflush(stdin);
+	 fflush(stdout);
+	 scanf("%d",&n);
+	}
+
 	for(i=0;i<n;i++)
 	{
 		printf("\n%d. enter number :",i+1);
 		fflush(stdin);
 		fflush(stdout);
-		scanf("%f",&num);
-		a[i]=num;// instead of this line we can do this >>sum+=a[i]; this line makes for loop redundant
+		scanf("%f",&a[i]);
+		sum+=a[i];// instead of this line we can do this >>sum+=a[i]; this line makes for loop redundant
 
 	}
 
-	for(i=0;i<n;i++)
-	{
-		sum+=a[i];
-	}
+
 	printf("the average is %f",sum/n);
-	printf("\n %d",sizeof(a));
+
 
 */
 
@@ -235,6 +240,8 @@ if the user enters 0 skip it.
 	printf("\nenter the location : ");
 	fflush(stdin);fflush(stdout);
 	scanf("%i",&location);
+
+
 	for (i=s;i>=location;--i)
 	{
 		array[i]=array[i-1];
@@ -282,9 +289,11 @@ if the user enters 0 skip it.
 		else
 		{
 			printf("the element found in location %i",location+1);
+
 		}
 
 */
+
 
 	//C Program to find the frequency of characters in string
 	/*
